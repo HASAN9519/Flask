@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- link to css file, static is folder name, css/style.css is file from where css style is imported -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+    <!-- link to js file, static is folder name, script/script.js is file from where js is imported -->
+    <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}"></script>
+    
+  </head>
+
+<!--  Manual styling, just reomve this line and last comment tag to uncomment
+
+  <style>
+    input[type=text], select{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit]{
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=sumbit]:hover{
+      background-color: #4Ca049;
+    }
+
+    div{
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+
+//-->
+
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/submit" method='post'>
+  <label for="Science">Science:</label><br>
+  <input type="text" id="science" name="science" value="0"><br><br>
+
+  <label for="Maths">Maths:</label><br>
+  <input type="text" id="maths" name="maths" value="0"><br><br>
+
+  <label for="C ">C:</label><br>
+  <input type="text" id="c" name="c" value="0"><br><br>
+
+  <label for="datascience">Data Science:</label><br>
+  <input type="text" id="datascience" name="datascience" value="0"><br><br>
+  <input type="submit" value="Submit data">
+</form> 
+
+<p><b>Click "Submit data" button, form-data will be sent to a page called "/submit"</b></p>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+###      required pakages 
+
+pip install Flask
+pip install SQLAlchemy
+pip install flask-sqlalchemy
+
+
+
+###      run this codes onetime in python shell
+
+from app import db
+
+# creating database
+db.create_all()    
+
+# running heroku in terminal
+heroku login
