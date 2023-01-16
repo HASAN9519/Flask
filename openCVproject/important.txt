@@ -1,0 +1,3 @@
+# before installing package from requirements.txt, first need to install this binary file for dlib package, otherwise error will occur
+# github link for different dlib for different python version https://github.com/datamagic2020/Install-dlib 
+pip install .\binary\dlib-19.22.99-cp310-cp310-win_amd64.whl
